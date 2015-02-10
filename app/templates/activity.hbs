@@ -1,0 +1,10 @@
+<h4>Total Activity Records: {{model.length}}</h4>
+
+<ul>
+  <li class="search-group">
+    {{type-ahead data=model name="display_name" selection=myColour}} {{myColour.display_name}}
+  </li>
+  {{#each model}}
+  <li class="activity">{{this.type}} : {{this.display_name}}</li>
+  {{/each}}
+</ul>
